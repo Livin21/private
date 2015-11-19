@@ -16,7 +16,11 @@ public class eyes extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_eyes);
+        try {
+            setContentView(R.layout.activity_eyes);
+        }catch (Exception e){
+            setContentView(R.layout.oom);
+        }
         CON=this;
     }
 

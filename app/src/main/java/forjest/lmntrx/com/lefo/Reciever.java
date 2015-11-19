@@ -5,7 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 public class Reciever extends Activity {
 
@@ -18,7 +20,11 @@ public class Reciever extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reciever);
+        try {
+            setContentView(R.layout.activity_reciever);
+        }catch (Exception e){
+            setContentView(R.layout.oom);
+        }
         CON = this;
         played = getIntent().getBooleanExtra("PLAYED", false);
         if (!played)
@@ -33,7 +39,11 @@ public class Reciever extends Activity {
 
     public void play() {
         mPlayer2 = MediaPlayer.create(this, R.raw.speak);
-        mPlayer2.start();
+        try {
+            mPlayer2.start();
+        }catch (Exception e){
+            Log.e("Null Pointer","Audio cannot be played");
+        }
 
     }
 

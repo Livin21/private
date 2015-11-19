@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 public class wish6 extends Activity {
 
@@ -15,7 +17,11 @@ public class wish6 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wish6);
+        try {
+            setContentView(R.layout.activity_wish6);
+        }catch (Exception e){
+            setContentView(R.layout.oom);
+        }
         CON=this;
     }
 
@@ -25,8 +31,13 @@ public class wish6 extends Activity {
     }
 
     public void play(){
-        mediaPlayer= MediaPlayer.create(this, R.raw.kiss);
-        mediaPlayer.start();
+        try{
+            mediaPlayer= MediaPlayer.create(this, R.raw.kiss);
+            mediaPlayer.start();
+        }catch (Exception e){
+            Toast.makeText(CON,"Audio cannot be played",Toast.LENGTH_LONG).show();
+            Log.e("Null Pointer", "Audio cannot be played");
+        }
         played=true;
 
     }

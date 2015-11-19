@@ -16,7 +16,11 @@ public class wish5 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wish5);
+        try {
+            setContentView(R.layout.activity_wish5);
+        }catch (Exception e){
+            setContentView(R.layout.oom);
+        }
         CON=this;
 
     }
