@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LeFo</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_wish1">wish1</string>
+    <string name="title_activity_reciever">Reciever</string>
+    <string name="title_activity_wish2">wish2</string>
+    <string name="title_activity_wish3">wish3</string>
+    <string name="title_activity_wish4">wish4</string>
+    <string name="title_activity_eyes">eyes</string>
+    <string name="title_activity_lips">lips</string>
+    <string name="title_activity_wish5">wish5</string>
+    <string name="title_activity_wish6">wish6</string>
+    <string name="title_activity_last">last</string>
+</resources>

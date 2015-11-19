@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="forjest.lmntrx.com.lefo" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lefo_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".AchayanCalling"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wish1"
+            android:label="@string/title_activity_wish1" >
+        </activity>
+        <activity
+            android:name=".Reciever"
+            android:label="@string/title_activity_reciever" >
+        </activity>
+        <activity
+            android:name=".wish2"
+            android:label="@string/title_activity_wish2" >
+        </activity>
+        <activity
+            android:name=".wish3"
+            android:label="@string/title_activity_wish3" >
+        </activity>
+        <activity
+            android:name=".wish4"
+            android:label="@string/title_activity_wish4" >
+        </activity>
+        <activity
+            android:name=".eyes"
+            android:label="@string/title_activity_eyes" >
+        </activity>
+        <activity
+            android:name=".lips"
+            android:label="@string/title_activity_lips" >
+        </activity>
+        <activity
+            android:name=".wish5"
+            android:label="@string/title_activity_wish5" >
+        </activity>
+        <activity
+            android:name=".wish6"
+            android:label="@string/title_activity_wish6" >
+        </activity>
+    </application>
+
+</manifest>
