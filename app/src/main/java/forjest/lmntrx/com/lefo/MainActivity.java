@@ -42,8 +42,8 @@ public class MainActivity extends Activity {
         Calendar calendar = Calendar.getInstance();
         today = calendar.getTime();
 
-        startDate = new Date(today.getYear(), 10, 20, 23, 50, 0);
-        alarmTime=new Date(today.getYear(), 10, 21, 0, 0, 0);
+        startDate = new Date(today.getYear(), 10, 19, 23, 50, 0);
+        alarmTime=new Date(today.getYear(), 10, 20, 0, 0, 0);
 
 
         this.getWindow().setFlags(
